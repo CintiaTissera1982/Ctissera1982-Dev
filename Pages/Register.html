@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate como cliente!</title>
+                <!-- Font awesome -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+                <!-- Stylesheet -->
+                <link rel="stylesheet" href="../stylesheet/style.css">  
+</head>
+<body>
+     <!-- HEADER -->
+     <header>
+        <section class="header__logo">
+            <a href="../index.html">
+                <img src="../images/Logo Final4.jpg" alt="logo" />
+              </a>
+        </section>
+        <section >
+            <label for="menu" class="header__burguerMenu">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <input type="checkbox" id="menu">
+              <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li><a href="../Pages/Categories.html">Categorias</a></li>
+                    <li><a href="">Cuando andamos por tu zona?</a></li>
+                    <li><a href="../Pages/Register.html">Registrate como cliente!</a></li>
+                    <li><a href="">Ingresa para comprar</a></li>
+                </ul>
+              </nav>
+        </section>
+        <section>
+            <a href=""><img src="../images/Carrito.jpg" alt="Carrito" /></a>
+        </section>
+    </header>
+    <main class="class_main">
+        <form action="" class="class_main__form">
+            <h2>Registrate como cliente</h2>
+            <section class="class_main__form__section" id="section_label">
+                <label for="name" class="class_main__form__label">Nombre</label>
+                <label for="surname" class="class_main__form__label">Apellido</label>
+                <label for="neighborhood" class="class_main__form__label">Barrio</label>              
+                <label for="CP" class="class_main__form__label">CP</label>
+                <label for="Phone" class="class_main__form__label">Teléfono de Contacto</label>
+                <label for="email" class="class_main__form__label">E-Mail de Contacto</label>
+                <label for="password" class="class_main__form__label">Contraseña</label>
+            </section>
+            <section class="class_main__form__section" id="section_input">
+                <input class="class_main__form__input" type="text" placeholder="Ingrese Nombre"  name="name" required>
+                <input class="class_main__form__input" type="text" placeholder="Ingrese Apellido"  name="surname" required>
+                <input class="class_main__form__input" type="text" placeholder="Ingrese Barrio"  name="neighborhood" required>
+                <input class="class_main__form__input" type="text" placeholder="Ingrese CP"  name="CP" required>
+                <input class="class_main__form__input" type="text" placeholder="Ingrese Teéfono de Contacto"  name="Phone" required>
+                <input class="class_main__form__input" type="email" placeholder="Ingrese E-Mail"  name="email" required>
+                <input class="class_main__form__input" type="password" placeholder="Ingrese Contraseña"  required>
+            </section>
+
+            <div class="class_main__form--buttonsContainer">              
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpiar</button>
+            </div>
+        </form>
+    </main>
+     <!-- FOOTER -->
+     <footer>
+        <div class="footer__socialMedia-container">
+            
+            <a id="a1" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a id="a2" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a id="a3" href="https://api.whatsapp.com/send?phone=0123456789" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a id="a4" href="../Pages/Vendors.html">¿Vendemos tus productos?</a>
+            <a id="a5" href="../Pages/Contact.html">Dejanos un mensaje</a>
+        </div>
+    </footer>  
+</body>
+</html>

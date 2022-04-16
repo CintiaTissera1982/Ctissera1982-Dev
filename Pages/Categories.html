@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+        <!-- Font awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="../stylesheet/style.css">    
+</head>
+<body>
+     <!-- HEADER -->
+     <header>
+        <section class="header__logo">
+            <a href="../index.html">
+                <img src="../images/Logo Final4.jpg" alt="logo" />
+              </a>
+        </section>
+        <section >
+            <label for="menu" class="header__burguerMenu">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <input type="checkbox" id="menu">
+              <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li><a href="../Pages/Categories.html">Categorias</a></li>
+                    <li><a href="">Cuando andamos por tu zona?</a></li>
+                    <li><a href="../Pages/Register.html">Registrate como cliente!</a></li>
+                    <li><a href="">Ingresa para comprar</a></li>
+                </ul>
+              </nav>
+        </section>
+        <section>
+            <a href=""><img src="../images/Carrito.jpg" alt="Carrito" /></a>
+        </section>
+    </header>
+    <main class="class_main_Categories">
+        <section id="section_1" class="class_main_Categories_section">
+            <ol type="none">
+                <p>Categorias</p>
+                <li><a href="">Bebidas Alcoholicas</a></li>
+                <li><a href="">Bebidas sin Alcohol</a></li>
+                <li><a href="">Comestibles</a></li>
+            </ol>  
+        </section>
+        <section id="section_2" class="class_main_Categories_section">
+            <section>
+                <label for="category">Rubros</label>
+                <select id="category" name="category">
+                    <option value="" hidden selected>Elije un rubro</option>
+                    <option value="vi">Vinos</option>
+                    <option value="ce">Cervezas</option>
+                    <option value="bb">Bebidas blancas</option>
+                </select>
+                <label for="brand">Marcas</label>
+                <select id="brand" name="brand">
+                    <option value="" hidden selected>Elije una Marca</option>
+                    <option value="to">Toro</option>
+                    <option value="ot">Otro Loco Mas</option>
+                    <option value="vr">Viñas Riojanas</option>
+                </select>
+            </section>
+            <section class="class_section2_sub">   
+
+                <section  class="class_prod_top">
+                    <ol>
+                        <li><img src="../images/producto1.jpg" alt="Vino Toro"></li>
+                        <li><label for="producto1">Vino Toro 3/4</label></li>
+                        <li><label for="precio">100 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>    
+                </section>
+
+                <section class="class_prod_top">
+                    <ol>
+                        <li><img src="../images/producto2.jpg" alt="Vino Otro Loco"></li>
+                        <li><label for="producto2">Vino Otro Loco Mas 3/4</label></li>
+                        <li><label for="precio">400 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>  
+                </section>
+
+                <section class="class_prod_top">
+                    <ol>
+                        <li><img src="../images/producto3.jpg" alt="Cerveza Corona"></li>
+                        <li><label for="producto3">Cerveza Corona 330 cc</label></li>
+                        <li><label for="precio">2300 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>
+                </section>
+
+ 
+            </section>
+            <section class="class_section2_sub">     
+                <section class="class_prod_bot">
+                    <ol>
+                        <li><img src="../images/producto4.jpg" alt="Fernet Branca"></li>
+                        <li><label for="producto4">Fernet Branca 750</label></li>
+                        <li><label for="precio">100 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>
+                </section>             
+
+                <section class="class_prod_bot"> 
+                    <ol>
+                        <li><img src="../images/producto5.jpg" alt="Smirnoff"></li>
+                        <li><label for="producto5">Vodka Smirnoff</label></li>
+                        <li><label for="precio">600 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>
+                </section>
+
+                <section class="class_prod_bot">   
+                    <ol>
+                        <li><img src="../images/producto6.jpg" alt="Baileys"></li>
+                        <li><label for="producto6">Licor Baileys</label></li>
+                        <li><label for="precio">1000 $</label></li>
+                        <li><a href="">Añadir al Carrito</a></li>
+                    </ol>
+                </section>
+ 
+            </section>
+        </section>
+    </main>
+     <!-- FOOTER -->
+     <footer>
+        <div class="footer__socialMedia-container">
+            
+            <a id="a1" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a id="a2" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a id="a3" href="https://api.whatsapp.com/send?phone=0123456789" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a id="a4" href="../Pages/Vendors.html">¿Vendemos tus productos?</a>
+            <a id="a5" href="../Pages/Contact.html">Dejanos un mensaje</a>
+        </div>
+    </footer>  
+</body>
+</html>
