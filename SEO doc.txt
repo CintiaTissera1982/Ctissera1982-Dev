@@ -1,0 +1,12 @@
+*SEO*
+
+Se aplica SEO en 
+
+Index.html - Register.html - Vendors.html - Contact.html
+
+Meta - Description : Se coloco "Tienda online de Bebidas"
+Meta - Keywords : CERVEZA, VINO, TORO, BAGGIO, JUGOS
+Title: Tienda Distribuidora OMMI
+
+
+

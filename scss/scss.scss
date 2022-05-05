@@ -1,4 +1,7 @@
 @import "variables";
+@import 'maps';
+@import 'extends';
+@import 'mixins';
 
 .gradiant_class{
 
@@ -9,58 +12,21 @@
                  radial-gradient(ellipse at top,rgb(238, 237, 235), transparent);
   }
 
-  .style_class{
-    text-align: center;
-    color: $color;
-
-  }
-
  .form_class{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: $backgroundColor;
-    
-    .class__labels{
-        display:none;        
-    }
-    .class__field{
-        width: $width;
-        height: $heigth;
-        margin: 10px;        
-    }
-    .sub__button{
-        margin-left: 0px;
-        margin-right: 5px;        
-        width: 90px;
-        height: 35px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        background-color: $buttoncolor;
-        color:white;
-    }
-    .button_class{
-        width: $width;
-        height: $heigth;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-    }
-    
-}
-@media screen and (min-width: 768px){
-    .form_class{
-        
-        .class__labels{
-            display: flex;
-            width: $width;
-            height: $heigth;
-            padding: 10px;
-            align-items: center;
-        }
-
-    }
 }
 
+.class_div_text_area{
+
+    height: 300px;
+}
+
+.class__text_area{
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+}

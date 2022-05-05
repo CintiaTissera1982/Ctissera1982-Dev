@@ -1,0 +1,28 @@
+.btn__class {
+    font-family: 'Verdana';
+    width: $width;
+    height: $heigth;
+    margin-bottom: 10px; 
+    margin-left: 0px;
+    margin-right: 5px;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.btn__class-send{
+    @extend .btn__class;
+    background-color: rgb(76, 102, 173);
+    width: $widthBut;
+    height: $heigthBut;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn__class-clear{
+    @extend .btn__class;
+    background-color: rgb(179, 43, 43);
+    width: $widthBut;
+    height: $heigthBut;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}

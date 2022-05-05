@@ -1,0 +1,21 @@
+@mixin values($color,$fontsize,$fontfamily,$display,$align,$width, $height,$margin) {
+    color: $color;
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    display: $display;
+    align-items: $align;
+    width: $width;
+    height: $height;
+    margin: $margin;
+ }
+
+ .class__text_mix {
+    @include values(rgb(14, 13, 13),1rem,Verdana,flex,center,100%,35px,10px);
+ }
+
+
+
+
+
+
+ 

@@ -1,0 +1,18 @@
+$estyes:(
+    color: rgb(241, 239, 243),
+    fontSize: 1.5rem,    
+    family: Verdana,
+    aligne: center,
+    display: flex,
+    bold: bold,
+);
+
+
+.class__labels_maps{
+    color: map-get($estyes, color);
+    font-size: map-get($estyes, fontSize);
+    font-family: map-get($estyes, family);
+    display: map-get($estyes, display);
+    align-items: map-get($estyes, aligne);
+    font: map-get($estyes, bold);   
+}
