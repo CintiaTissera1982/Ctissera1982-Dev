@@ -13,7 +13,7 @@
 
 .btn__class-send{
     @extend .btn__class;
-    background-color: rgb(76, 102, 173);
+    background-color: $buttoncolor;
     width: $widthBut;
     height: $heigthBut;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -21,8 +21,18 @@
 
 .btn__class-clear{
     @extend .btn__class;
-    background-color: rgb(179, 43, 43);
+    background-color: $buttoncolor;
     width: $widthBut;
     height: $heigthBut;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn__class-send:hover{
+
+    background-color: rgb(24, 23, 23);
+}
+
+.btn__class-clear:hover{
+
+    background-color: rgb(24, 23, 23);
 }

@@ -1,15 +1,10 @@
-@import "variables";
+@import 'variables';
 @import 'maps';
 @import 'extends';
 @import 'mixins';
 
 .gradiant_class{
-
-    background:  radial-gradient(rgb(97, 95, 95), rgb(116, 77, 116));
-    background:  radial-gradient(closest-side,rgb(153, 152, 152), rgb(165, 164, 165), rgb(109, 30, 30));
-    background:  radial-gradient(circle at 100%,rgb(187, 155, 155), rgb(187, 180, 187), rgb(129, 129, 98), transparent);
-    background:  radial-gradient(ellipse at top,rgb(212, 209, 209), transparent),
-                 radial-gradient(ellipse at top,rgb(238, 237, 235), transparent);
+    background:  linear-gradient(90deg, #b6b3b3 0%, #c6c6da 35%, #e0dddd 100%);
   }
 
  .form_class{
@@ -21,7 +16,6 @@
 }
 
 .class_div_text_area{
-
     height: 300px;
 }
 
@@ -29,4 +23,40 @@
     width: 95%;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.color_h2_class{
+    color: rgb(71, 21, 121);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.img__hover:hover{
+    transform: scale(1.1);
+}
+
+.font__size{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+@keyframes left-in {
+    0%{
+      left:-100%;
+      opacity: 0;
+      color: rgb(48, 48, 172);
+
+    }
+    100%{
+      left:0;
+      opacity: 1;
+      color: rgb(96, 105, 156);
+    }
+  }
+
+  
+.main__tittle{
+    animation-name:left-in;
+    animation-duration: 3s;
+    font-style: italic;
 }

@@ -1,5 +1,5 @@
 .class__labels_maps {
-  color: #f1eff3;
+  color: #471579;
   font-size: 1.5rem;
   font-family: Verdana;
   display: flex;
@@ -19,16 +19,22 @@
   color: white; }
 
 .btn__class-send {
-  background-color: #4c66ad;
+  background-color: #91a4af;
   width: 90px;
   height: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
 
 .btn__class-clear {
-  background-color: #b32b2b;
+  background-color: #91a4af;
   width: 90px;
   height: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
+
+.btn__class-send:hover {
+  background-color: #181717; }
+
+.btn__class-clear:hover {
+  background-color: #181717; }
 
 .class__text_mix {
   color: #0e0d0d;
@@ -41,17 +47,14 @@
   margin: 10px; }
 
 .gradiant_class {
-  background: radial-gradient(#615f5f, #744d74);
-  background: radial-gradient(closest-side, #999898, #a5a4a5, #6d1e1e);
-  background: radial-gradient(circle at 100%, #bb9b9b, #bbb4bb, #818162, transparent);
-  background: radial-gradient(ellipse at top, #d4d1d1, transparent), radial-gradient(ellipse at top, #eeedeb, transparent); }
+  background: linear-gradient(90deg, #b6b3b3 0%, #c6c6da 35%, #e0dddd 100%); }
 
 .form_class {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #727070; }
+  background-color: #d6d9da; }
 
 .class_div_text_area {
   height: 300px; }
@@ -60,3 +63,30 @@
   width: 95%;
   margin-left: 10px;
   margin-right: 10px; }
+
+.color_h2_class {
+  color: #471579;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.img__hover:hover {
+  transform: scale(1.1); }
+
+.font__size {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey; }
+
+@keyframes left-in {
+  0% {
+    left: -100%;
+    opacity: 0;
+    color: #3030ac; }
+  100% {
+    left: 0;
+    opacity: 1;
+    color: #60699c; } }
+
+.main__tittle {
+  animation-name: left-in;
+  animation-duration: 3s;
+  font-style: italic; }
