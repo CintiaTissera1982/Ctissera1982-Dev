@@ -1,6 +1,14 @@
 .class__labels_maps {
-  color: #471579;
+  color: white;
   font-size: 1.5rem;
+  font-family: Verdana;
+  display: flex;
+  align-items: center;
+  font: bold; }
+
+.class__labels_maps_cart {
+  color: white;
+  font-size: 1rem;
   font-family: Verdana;
   display: flex;
   align-items: center;
@@ -16,25 +24,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; }
+  color: black; }
 
 .btn__class-send {
-  background-color: #91a4af;
+  background-color: white;
   width: 90px;
   height: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
 
 .btn__class-clear {
-  background-color: #91a4af;
+  background-color: white;
   width: 90px;
   height: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
 
 .btn__class-send:hover {
-  background-color: #181717; }
+  background-color: #181717;
+  color: white; }
 
 .btn__class-clear:hover {
-  background-color: #181717; }
+  background-color: #181717;
+  color: white; }
 
 .class__text_mix {
   color: #0e0d0d;
@@ -46,15 +56,22 @@
   height: 35px;
   margin: 10px; }
 
-.gradiant_class {
-  background: linear-gradient(90deg, #b6b3b3 0%, #c6c6da 35%, #e0dddd 100%); }
-
 .form_class {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #d6d9da; }
+  background-color: black; }
+
+.form_main_class {
+  background-color: black; }
+
+.class_div_cart {
+  margin: 5%; }
+
+.label_class_color {
+  color: white;
+  font-size: x-large; }
 
 .class_div_text_area {
   height: 300px; }
@@ -65,7 +82,7 @@
   margin-right: 10px; }
 
 .color_h2_class {
-  color: #471579;
+  color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .img__hover:hover {
@@ -90,3 +107,14 @@
   animation-name: left-in;
   animation-duration: 3s;
   font-style: italic; }
+
+.ol_class {
+  padding: 10%;
+  color: white;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-color: white;
+  border-style: double; }
+
+.check_class {
+  color: white; }

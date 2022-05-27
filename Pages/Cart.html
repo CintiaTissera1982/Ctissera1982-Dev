@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda Online de Bebidas">
     <meta name="keywords" content="CERVEZA, VINO, TORO, BAGGIO, JUGOS">
-    <title>Contactanos</title>
+    <title>Finaliza tu compra!</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../stylesheet/style.css"> 
@@ -70,31 +70,169 @@
       </nav>
   </header> 
     <!-- MAIN --> 
-    <main>
-      <form class="form_class">
-        <h2 class="color_h2_class">Contactanos</h2>
-        <div class="">
-          <label for="inputName" class="class__labels_maps">Nombre</label>
-          <input type="text" class="class__text_mix" placeholder="Ingrese Nombre" id="inputName">
-        </div>
-        <div class="">
-          <label for="inputPhone" class="class__labels_maps">Teléfono</label>
-          <input type="tel" class="class__text_mix" placeholder="Ingrese Teléfono" id="inputPhone">
-        </div>
-        <div class="">
-          <label for="inputEmail" class="class__labels_maps">Correo Electronico</label>
-          <input type="email" class="class__text_mix" placeholder="name@gmail.com" id="inputEmail">
-        </div>
-        <div class="class_div_text_area">
-          <label for="inputZip" class="class__labels_maps">Ingrese Mensaje</label>
-          <textarea class="class__text_area" name="textArea" id="text__area" cols="100" rows="10" placeholder="Envianos tu consulta aqui"></textarea>
-        </div>
+    <main class="form_main_class">
+      <h2 class="text-center color_h2_class">Finalizá tu compra</h2>
 
-        <div class="btn__class">
-          <button class="btn__class-send" type="submit">Enviar</button> 
-          <button class="btn__class-clear" type="reset">Limpiar</button>           
+      <div class="container">
+
+        <div class="row">
+          
+          <div class="col">
+            <h4 class="color_h2_class">Detalle de tu Pedido</h4>
+            <div class="accordion accordion-flush class_div_cart" id="accordionFlushExample">
+
+              <div class="accordion-item">
+                 <h2 class="accordion-header" id="flush-headingOne">
+                   <button class="bg-dark text-light accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     Haz click para ver tu pedido
+                   </button>
+                 </h2>
+                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                   <div class="accordion-body">
+                     <ol>
+                       <li>
+                         <h5>Vino TORO 12 X 1000 CC</h5>
+                       </li>
+                       <li>
+                         <h5>Vino VIÑAS RIOJANAS 12 X 1000 CC</h5>
+                       </li>
+                       <li>
+                         <h5>Jugo BAGGIO 8 X 10000 CC</h5>
+                       </li>
+                     </ol>
+                   </div>
+                 </div>
+              </div>
+            </div>
+
+            <div class="class_div_cart">
+              <h4 class="color_h2_class">Detalle de Entrega</h4>
+              <div>
+                <label for="inputAdress" class="class__labels_maps_cart">Domicilio</label>
+                <input type="text" class="class__text_mix" placeholder="Genreal Paz 50" id="inputAdress" disabled>
+              </div>         
+              <div class="">
+                <label for="inputNeib" class="class__labels_maps_cart">Barrio</label>
+                <input type="text" class="class__text_mix" placeholder="Centro" id="inputNeib" disabled>
+              </div>     
+              <div>
+                <label for="inputBuy" class="class__labels_maps_cart">Fecha de Entrega</label>   
+                <input type="date" class="class__text_mix" value="2022-07-22" id="inputBuy" disabled>       
+              </div>                                
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label color_h2_class" for="flexSwitchCheckChecked">Modificá datos de Entrega</label>
+              </div>              
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <h4 class="color_h2_class">Selecciona tu Forma de Pago</h4>
+              <div>
+                <label for="inputCost" class="class__labels_maps_cart">Monto de Pedido</label>
+                <input type="text" class="class__text_mix" placeholder="20000 $" id="inputCost" disabled>
+              </div> 
+              <div class="">
+                <label for="inputPay" class="class__labels_maps_cart">Forma de Pago</label>
+                <select id="inputPay" class="form-select">
+                  <option value="" hidden selected>Seleccione</option>
+                  <option value="Contado">Contado</option>
+                  <option value="Tbank">Trasferencia Bancaria</option>
+                  <option value="Tarjeta">Tarjeta de Crédito/Débito</option>
+                </select>
+              </div>
+              <div class="class_div_cart">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label color_h2_class" for="flexSwitchCheckChecked">Tarjeta Credito/Debito</label>
+                </div>
+                <div class="row">
+                  <div class="col form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label color_h2_class" for="flexRadioDefault1">
+                      VISA Debito
+                    </label>
+                  </div>
+                  <div class="col form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label color_h2_class" for="flexRadioDefault1">
+                      VISA Credito
+                    </label>
+                  </div>
+                  <div class="col form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label color_h2_class" for="flexRadioDefault1">
+                      Mastercard
+                    </label>
+                  </div>
+                  <div class="col form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label color_h2_class" for="flexRadioDefault1">
+                      Naranja
+                    </label>
+                  </div>
+                  <div class="col form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label color_h2_class" for="flexRadioDefault1">
+                      Cordobesa
+                    </label>
+                  </div>                  
+                </div>
+
+                <div class="class_div_cart">
+                  <div class="">
+                    <label for="inputtit" class="class__labels_maps_cart">Titular de Tarjeta</label>
+                    <input type="text" class="class__text_mix"  placeholder="Ingrese titular" id="inputtit">
+                  </div>                
+                  <div class="">
+                    <label for="inputTar" class="class__labels_maps_cart">Número de Tarjeta</label>
+                    <input type="text" class="class__text_mix"  placeholder="XXXX-XXXX-XXXX-XXXX" id="inputTar">
+                  </div>     
+                  <div class="">
+                    <label for="inputVto" class="class__labels_maps_cart">Mes/Año Vencimiento</label>
+                    <input type="text" class="class__text_mix"  placeholder="MM/AA" id="inputVto">
+                  </div>     
+      
+                  <div class="">
+                    <label for="inputSeg" class="class__labels_maps_cart">Código de Seguridad</label>
+                    <input type="text" class="class__text_mix"  placeholder="XXX" id="inputSeg">
+                  </div>    
+
+                  <div class="">
+                    <label for="inputCouta" class="class__labels_maps_cart">Cuotas</label>
+                    <input type="text" class="class__text_mix"  placeholder="2,3,5,12" id="inputCouta">
+                  </div>    
+
+                </div>
+              </div>
+
+              <div class="class_div_cart">
+                <div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label color_h2_class" for="flexSwitchCheckChecked">CBU/Alias</label>
+                  </div>  
+                  <div class="">
+                    <label for="inputCBU" class="class__labels_maps_cart">CBU</label>
+                    <input type="text" class="class__text_mix"  placeholder="XXXXXXXXXXXXXXXXXXXXXX" id="inputCBU">
+                  </div>   
+                  <div class="">
+                    <label for="inputAlias" class="class__labels_maps_cart">Alias</label>
+                    <input type="text" class="class__text_mix"  placeholder="Ingrese el Alias" id="inputAlias">
+                  </div>     
+                </div>
+              </div>
+
+
+              <div class="btn__class">
+                <button class="btn__class-send" type="submit">Enviar</button> 
+                <button class="btn__class-clear" type="reset">Anular</button>           
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
+      </div>
     </main>
      <!-- FOOTER -->
      <div class="container fw-bold">

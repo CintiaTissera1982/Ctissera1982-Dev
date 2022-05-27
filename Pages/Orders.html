@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda Online de Bebidas">
     <meta name="keywords" content="CERVEZA, VINO, TORO, BAGGIO, JUGOS">
-    <title>Contactanos</title>
+    <title>Consulta tu Pedido</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../stylesheet/style.css"> 
@@ -72,28 +72,72 @@
     <!-- MAIN --> 
     <main>
       <form class="form_class">
-        <h2 class="color_h2_class">Contactanos</h2>
-        <div class="">
-          <label for="inputName" class="class__labels_maps">Nombre</label>
-          <input type="text" class="class__text_mix" placeholder="Ingrese Nombre" id="inputName">
+        <h2 class="color_h2_class">Consulta tu Pedido</h2>
+        <div>
+          <div>
+            <label for="inputOrden" class="class__labels_maps">Nro. de Orden</label>
+            <input type="text" class="class__text_mix" placeholder="Ingrese Nro de Orden" id="inputOrden">
+          </div>
+          <div class="btn__class">
+            <button class="btn__class-send" type="button">Buscar</button> 
+          </div>
         </div>
-        <div class="">
-          <label for="inputPhone" class="class__labels_maps">Teléfono</label>
-          <input type="tel" class="class__text_mix" placeholder="Ingrese Teléfono" id="inputPhone">
+        <div>
+          <label for="inputName" class="class__labels_maps">Nombre y Apellido</label>
+          <input type="text" class="class__text_mix" placeholder="Juan Diaz" id="inputName" disabled>
         </div>
-        <div class="">
-          <label for="inputEmail" class="class__labels_maps">Correo Electronico</label>
-          <input type="email" class="class__text_mix" placeholder="name@gmail.com" id="inputEmail">
+        <div>
+          <label for="inputAdress" class="class__labels_maps">Domicilio</label>
+          <input type="text" class="class__text_mix"  placeholder="General Paz 55" id="inputAdress" disabled>
         </div>
-        <div class="class_div_text_area">
-          <label for="inputZip" class="class__labels_maps">Ingrese Mensaje</label>
-          <textarea class="class__text_area" name="textArea" id="text__area" cols="100" rows="10" placeholder="Envianos tu consulta aqui"></textarea>
+        
+        <div>
+          <label for="" class="class__labels_maps">Detalle del Pedido</label>          
+        </div>
+        
+        <div class="accordion accordion-flush class_div_cart" id="accordionFlushExample">
+
+          <div class="accordion-item">
+             <h2 class="accordion-header" id="flush-headingOne">
+               <button class="bg-dark text-light accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                 Haz click para ver tu pedido
+               </button>
+             </h2>
+             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body">
+                 <ol>
+                   <li>
+                     <h5>Vino TORO 12 X 1000 CC</h5>
+                   </li>
+                   <li>
+                     <h5>Vino VIÑAS RIOJANAS 12 X 1000 CC</h5>
+                   </li>
+                   <li>
+                     <h5>Jugo BAGGIO 8 X 10000 CC</h5>
+                   </li>
+                 </ol>
+               </div>
+             </div>
+          </div>
+        </div>       
+
+        <div>
+          <label for="inputBuy" class="class__labels_maps">Total compra</label>   
+          <input type="text" class="class__text_mix" placeholder="2541.50 $"  id="inputBuy" disabled>       
+        </div>
+        <div>
+          <label for="inputBuy" class="class__labels_maps">Forma de Pago</label>   
+          <input type="text" class="class__text_mix" placeholder="Contado" id="inputBuy" disabled>       
+        </div>
+        <div>
+          <label for="inputDate" class="class__labels_maps">Fecha de Entrega</label>   
+          <input type="date" class="class__text_mix" value="2022-07-22"  id="inputDate" disabled>       
         </div>
 
         <div class="btn__class">
-          <button class="btn__class-send" type="submit">Enviar</button> 
+          <button class="btn__class-send" type="submit">Aceptar</button> 
           <button class="btn__class-clear" type="reset">Limpiar</button>           
-        </div>
+        </div> 
       </form>
     </main>
      <!-- FOOTER -->

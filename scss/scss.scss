@@ -3,10 +3,6 @@
 @import 'extends';
 @import 'mixins';
 
-.gradiant_class{
-    background:  linear-gradient(90deg, #b6b3b3 0%, #c6c6da 35%, #e0dddd 100%);
-  }
-
  .form_class{
     display: flex;
     align-items: center;
@@ -14,6 +10,21 @@
     flex-direction: column;
     background-color: $backgroundColor;
 }
+
+.form_main_class{
+    background-color: $backgroundColor;
+}
+
+.class_div_cart{
+    margin: 5%;
+
+}
+
+.label_class_color{
+    color: white;
+    font-size:x-large;
+}
+
 
 .class_div_text_area{
     height: 300px;
@@ -26,7 +37,7 @@
 }
 
 .color_h2_class{
-    color: rgb(71, 21, 121);
+    color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;    
 }
 
@@ -59,4 +70,17 @@
     animation-name:left-in;
     animation-duration: 3s;
     font-style: italic;
+}
+
+.ol_class{
+    padding: 10%;
+    color: white;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: white;
+    border-style: double;
+}
+
+.check_class{
+    color: white;
 }

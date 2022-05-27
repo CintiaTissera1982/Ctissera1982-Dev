@@ -1,5 +1,5 @@
 $estyes:(
-    color: rgb(71, 21, 121),
+    color: white,
     fontSize: 1.5rem,    
     family: Verdana,
     aligne: center,
@@ -15,4 +15,24 @@ $estyes:(
     display: map-get($estyes, display);
     align-items: map-get($estyes, aligne);
     font: map-get($estyes, bold);   
+}
+
+
+$estyesCart:(
+    color: white,
+    fontSize: 1rem,    
+    family: Verdana,
+    aligne: center,
+    display: flex,
+    bold: bold,
+);
+
+
+.class__labels_maps_cart{
+    color: map-get($estyesCart, color);
+    font-size: map-get($estyesCart, fontSize);
+    font-family: map-get($estyesCart, family);
+    display: map-get($estyesCart, display);
+    align-items: map-get($estyesCart, aligne);
+    font: map-get($estyesCart, bold);   
 }
